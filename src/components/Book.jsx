@@ -8,7 +8,7 @@ function Book(props) {
             </div>
             <div className="book_footer">
                 <p className="price">Цена: {props.book.price}</p>
-                {/* <button onClick={() => props.onClickButtonFunc(props.book)} className="buy_btn">Купить</button> */}
+                <button onClick={() => props.onClickButtonFunc(props.book)} className="buy_btn">Купить</button>
             </div>
         </div>
     )

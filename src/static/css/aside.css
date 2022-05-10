@@ -7,3 +7,14 @@
     margin: 0;
     padding: 0;
 }
+
+.user_info {
+    border-radius: 10px;
+    padding: 10px;
+    height: 140px;
+
+    background-color: rgba(181, 238, 238, 0.5);
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 10px rgba(109, 140, 243, 0.285);
+}
