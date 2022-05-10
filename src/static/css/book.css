@@ -3,7 +3,8 @@
     border-top: none;
     /* padding: 10px; */
     /* background-color: white; */
-    margin: 10px;
+    margin: 10px 10px 20px 10px;
+    box-shadow: 0 0 10px rgba(109, 140, 243, 0.285);
     border-radius: 10px;
 }
 
@@ -30,6 +31,7 @@
     order: -1;
     height: 90vh;
     overflow-y: auto;
+    scroll-behavior: smooth;
     width: 65%
 }
 
