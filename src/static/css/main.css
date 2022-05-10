@@ -1,19 +1,24 @@
 .app {
     height: 100vh;
-    background-color: aliceblue
+    background-color: Linen
+}
+
+body {
+    font-family: 'Roboto';
+    color: #64483c
 }
 
 .footer,
 .header {
     height: 5vh;
-    background-color: aliceblue;
+    background-color: Linen;
 }
 
 .shop {
     display: flex;
     width: min(1500px, 80%);
     margin: 0 auto 0 auto;
-    background-color: aliceblue;
+    background-color: Linen;
 }
 
 @media screen and (max-width: 758px) {

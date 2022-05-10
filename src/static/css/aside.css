@@ -11,10 +11,19 @@
 .user_info {
     border-radius: 10px;
     padding: 10px;
-    height: 140px;
-
-    background-color: rgba(181, 238, 238, 0.5);
+    height: 230px;
+    background-color: rgb(221, 212, 201);
     font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    box-shadow: 0 0 10px rgba(109, 140, 243, 0.285);
+    box-shadow: 0 0 10px rgba(71, 54, 5, 0.285);
+}
+
+
+@media screen and (max-width: 758px) {
+    .aside_info {
+        width: 100%;
+    }
+
+    .user_info {
+        height: auto;
+    }
 }

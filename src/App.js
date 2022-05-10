@@ -4,7 +4,7 @@ import BooksList from './components/BooksList';
 import "./static/css/main.css"
 import { useState } from 'react'
 function App() {
-  const [balance, setBalance] = useState(1000);
+  const [balance, setBalance] = useState(220);
   const [books, setBooks] = useState([
     {
       id: 1,
@@ -74,6 +74,18 @@ function App() {
     },
     {
       id: 12,
+      name: 'Джедайские техники - Максим Дорофеев',
+      price: 210,
+      amount: 1
+    },
+    {
+      id: 13,
+      name: 'fhjdkfjndhjfikldnfdiana',
+      price: 210,
+      amount: 1
+    },
+    {
+      id: 14,
       name: 'fhjdkfjndhjfikldnfdiana',
       price: 210,
       amount: 1
@@ -123,13 +135,8 @@ function App() {
     <div className="app">
       <header className="header">
       </header>
-      {errorMsg !== ""
-        ? <p>{errorMsg}</p>
-        : <div></div>
-      }
-
       <div className="shop">
-        <AsideInfo balance={balance} cart={cart} count={count} price={price} />
+        <AsideInfo balance={balance} cart={cart} count={count} price={price} errorMsg={errorMsg} />
         <BooksList books={books} onClickButtonFunc={onClickButtonFunc} />
       </div>
 

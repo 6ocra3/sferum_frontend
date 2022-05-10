@@ -4,13 +4,12 @@
     /* padding: 10px; */
     /* background-color: white; */
     margin: 10px 10px 20px 10px;
-    box-shadow: 0 0 10px rgba(109, 140, 243, 0.285);
+    box-shadow: 0 0 10px rgba(71, 54, 5, 0.285);
     border-radius: 10px;
 }
 
 .price {
     font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .buy_btn {
@@ -19,10 +18,11 @@
     height: 35px;
     width: 200px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
     border: none;
-    background-color: rgba(109, 140, 243, 0.285);
+    background-color: #dcd0c3;
+    /* background-color: rgba(109, 140, 243, 0.285); */
     border-radius: 5px;
+    color: #64483c
 }
 
 .books_list {
@@ -41,19 +41,17 @@
 
 .book_header {
     padding: 10px 10px 5px 10px;
-    background-color: rgba(181, 238, 238, 0.5);
+    background-color: #ddd4c9;
     border-radius: 10px 10px 0 0;
-    color: rgb(64, 64, 106)
 }
 
 .book_footer {
     justify-content: space-between;
     display: flex;
     /* rgba(230, 231, 238, 0.3) */
-    background-color: rgba(175, 238, 238, 0.75);
+    background-color: #faf4ee;
     padding: 10px 10px 5px 10px;
     border-radius: 0 0 10px 10px;
-    color: rgb(31, 41, 113)
 }
 
 @media screen and (max-width: 758px) {
