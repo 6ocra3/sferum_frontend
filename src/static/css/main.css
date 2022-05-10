@@ -1,0 +1,22 @@
+.app {
+    height: 100vh
+}
+
+.footer,
+.header {
+    height: 5vh;
+    background-color: whitesmoke;
+}
+
+.shop {
+    display: flex;
+    width: min(800px, 80%);
+    margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 758px) {
+    .shop {
+        display: block;
+        height: 90;
+    }
+}

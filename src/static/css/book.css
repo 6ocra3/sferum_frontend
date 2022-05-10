@@ -1,0 +1,35 @@
+.book_card {
+    border: 2px solid black;
+    border-left: none;
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.buy_btn {
+    background: none;
+    margin: auto 0 auto 0;
+    height: 30px;
+    width: 200px;
+    font-size: 17px;
+}
+
+.books_list {
+    border: 2px solid black;
+    display: inline-block;
+    order: -1;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 758px) {
+    .books_list {
+        height: 80vh;
+    }
+}
