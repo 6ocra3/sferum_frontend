@@ -3,11 +3,13 @@ import React, { useState } from 'react';
 function Book(props) {
     return (
         <div className="book_card">
-            <div className="book_info">
+            <div className="book_header">
                 <h3>{props.book.name}</h3>
-                <p className="price">Цена: {props.book.price}</p>
             </div>
-            <button onClick={() => props.onClickButtonFunc(props.book)} className="buy_btn">Купить</button>
+            <div className="book_footer">
+                <p className="price">Цена: {props.book.price}</p>
+                {/* <button onClick={() => props.onClickButtonFunc(props.book)} className="buy_btn">Купить</button> */}
+            </div>
         </div>
     )
 }

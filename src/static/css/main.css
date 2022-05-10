@@ -5,13 +5,14 @@
 .footer,
 .header {
     height: 5vh;
-    background-color: whitesmoke;
+    background-color: aliceblue;
 }
 
 .shop {
     display: flex;
-    width: min(800px, 80%);
+    width: min(1500px, 80%);
     margin: 0 auto 0 auto;
+    background-color: aliceblue;
 }
 
 @media screen and (max-width: 758px) {

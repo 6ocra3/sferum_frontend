@@ -3,7 +3,7 @@ import "../static/css/aside.css";
 function AsideInfo(props) {
     return (
         <div className="aside_info">
-            <h2 className="title">Личный кабинет</h2>
+            <h1 className="title">Личный кабинет</h1>
             <p>Ваш баланс: {props.balance}</p>
             {props.cart.length !== 0
                 ? <div>

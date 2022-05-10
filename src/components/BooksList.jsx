@@ -4,6 +4,7 @@ import "../static/css/book.css";
 function BooksList(props) {
     return (
         <div className="books_list">
+            <h1 className="title" style={{ marginLeft: "10px" }}>Доступные книги</h1>
             {
                 props.books.map((book) => {
                     if (book.amount > 0) {

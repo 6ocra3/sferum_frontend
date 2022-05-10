@@ -1,35 +1,62 @@
 .book_card {
-    border: 2px solid black;
     border-left: none;
     border-top: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    /* padding: 10px; */
+    /* background-color: white; */
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .price {
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .buy_btn {
     background: none;
     margin: auto 0 auto 0;
-    height: 30px;
+    height: 35px;
     width: 200px;
-    font-size: 17px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    background-color: rgba(109, 140, 243, 0.285);
+    border-radius: 5px;
 }
 
 .books_list {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: inline-block;
     order: -1;
     height: 90vh;
     overflow-y: auto;
+    width: 65%
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.book_header {
+    padding: 10px 10px 5px 10px;
+    background-color: rgba(181, 238, 238, 0.5);
+    border-radius: 10px 10px 0 0;
+    color: rgb(64, 64, 106)
+}
+
+.book_footer {
+    justify-content: space-between;
+    display: flex;
+    /* rgba(230, 231, 238, 0.3) */
+    background-color: rgba(175, 238, 238, 0.75);
+    padding: 10px 10px 5px 10px;
+    border-radius: 0 0 10px 10px;
+    color: rgb(31, 41, 113)
 }
 
 @media screen and (max-width: 758px) {
     .books_list {
         height: 80vh;
+        width: 100%;
     }
 }
