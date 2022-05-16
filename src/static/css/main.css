@@ -5,7 +5,8 @@
 
 body {
     font-family: 'Roboto';
-    color: #64483c
+    color: #64483c;
+    margin: 0;
 }
 
 .footer,
@@ -21,9 +22,22 @@ body {
     background-color: Linen;
 }
 
-@media screen and (max-width: 758px) {
+
+.book-exit {
+    opacity: 1;
+}
+
+.book-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+@media screen and (max-width: 1250px) {
     .shop {
         display: block;
-        height: 90;
+    }
+
+    .footer {
+        height: 10vh;
     }
 }

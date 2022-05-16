@@ -3,8 +3,8 @@ import agenda from "../static/img/agenda.png";
 function Book(props) {
     return (
         <div className="book_card">
-            <div className="book_header" style={{ display: "flex" }}>
-                <img src={agenda} width="26px" height="26px" style={{ marginTop: "auto", marginBottom: "auto", marginRight: "5px" }} />
+            <div className="book_header">
+                <img className="book_img" src={agenda} />
                 <h3>{props.book.name}</h3>
             </div>
             <div className="book_footer">
