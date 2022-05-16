@@ -1,23 +1,43 @@
 .app {
-    height: 100vh
+    height: 100vh;
+    background-color: Linen
+}
+
+body {
+    font-family: 'Roboto';
+    color: #64483c;
+    margin: 0;
 }
 
 .footer,
 .header {
     height: 5vh;
-    background-color: aliceblue;
+    background-color: Linen;
 }
 
 .shop {
     display: flex;
     width: min(1500px, 80%);
     margin: 0 auto 0 auto;
-    background-color: aliceblue;
+    background-color: Linen;
 }
 
-@media screen and (max-width: 758px) {
+
+.book-exit {
+    opacity: 1;
+}
+
+.book-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+@media screen and (max-width: 1250px) {
     .shop {
         display: block;
-        height: 90;
+    }
+
+    .footer {
+        height: 10vh;
     }
 }

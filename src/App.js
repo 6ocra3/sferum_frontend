@@ -74,48 +74,39 @@ function App() {
     },
     {
       id: 12,
+      name: 'Джедайские техники - Максим Дорофеев',
+      price: 210,
+      amount: 1
+    },
+    {
+      id: 13,
+      name: 'fhjdkfjndhjfikldnfdiana',
+      price: 210,
+      amount: 1
+    },
+    {
+      id: 14,
       name: 'fhjdkfjndhjfikldnfdiana',
       price: 210,
       amount: 1
     },
   ]);
-  const [cart, setCart] = useState([]);
   const [errorMsg, setErrorMsg] = useState("")
   const [count, setCount] = useState(0)
   const [price, setPrice] = useState(0)
+
   const onClickButtonFunc = (book) => {
     if (balance - book.price >= 0) {
       if (book.amount > 0) {
         books[books.indexOf(book, 0)].amount -= 1
         setBalance(balance - book.price)
         setErrorMsg("")
-        var newCart = []
-        var fl = true
         setCount(count + 1)
         setPrice(price + book.price)
-        for (var i = 0; i < cart.length; i++) {
-          if (cart[i].id === book.id) {
-
-            newCart.push(cart[i])
-            newCart[i].buyCnt += 1
-            fl = false
-          }
-          else {
-            newCart.push(cart[i])
-          }
-        }
-        if (fl) {
-          console.log(1)
-          newCart.push({ id: book.id, price: book.price, name: book.name, buyCnt: 1 })
-        }
-        setCart(newCart)
-      }
-      else {
-        setErrorMsg("У нас больше нет этой книги в наличии")
       }
     }
     else {
-      setErrorMsg("Цена книги превышает ваш баланс")
+      setErrorMsg("Недостаточно средст на балансе")
     }
   }
 
@@ -123,13 +114,8 @@ function App() {
     <div className="app">
       <header className="header">
       </header>
-      {errorMsg !== ""
-        ? <p>{errorMsg}</p>
-        : <div></div>
-      }
-
       <div className="shop">
-        <AsideInfo balance={balance} cart={cart} count={count} price={price} />
+        <AsideInfo balance={balance} count={count} price={price} errorMsg={errorMsg} />
         <BooksList books={books} onClickButtonFunc={onClickButtonFunc} />
       </div>
 
