@@ -1,12 +1,12 @@
-.app {
-    height: 100vh;
-    background-color: Linen
-}
-
 body {
     font-family: 'Roboto';
     color: #64483c;
     margin: 0;
+}
+
+.app {
+    height: 100vh;
+    background-color: Linen
 }
 
 .footer,
@@ -22,22 +22,12 @@ body {
     background-color: Linen;
 }
 
-
-.book-exit {
-    opacity: 1;
-}
-
-.book-exit-active {
-    opacity: 0;
-    transition: opacity 500ms ease-in;
-}
-
 @media screen and (max-width: 1250px) {
-    .shop {
-        display: block;
-    }
-
     .footer {
         height: 10vh;
+    }
+
+    .shop {
+        display: block;
     }
 }

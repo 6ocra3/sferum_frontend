@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import agenda from "../static/img/agenda.png";
 function Book(props) {
     return (
-        <div className="book_card">
+        <div className={props.show ? "book_card show" : "book_card"}>
             <div className="book_header">
                 <img className="book_img" src={agenda} />
                 <h3>{props.book.name}</h3>

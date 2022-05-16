@@ -13,7 +13,7 @@ function AsideInfo(props) {
                     ? <p className="paragraph error info_message">{props.errorMsg}</p>
                     : <div></div>
                 }
-                <p className="paragraph info_message">Ваш баланс: {props.balance}</p>
+                <p className="paragraph info_message balance">Ваш баланс: {props.balance}</p>
                 {props.count !== 0
                     ? <div>
                         <ImgText img={cart} text={`Количество книг: ${props.count}`} />

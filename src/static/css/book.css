@@ -1,11 +1,75 @@
+.available_books {
+    display: inline-block;
+    order: -1;
+    padding: 10px;
+    width: 65%
+}
+
+.list_title {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.book_list {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 85vh;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .book_card {
-    border-left: none;
-    border-top: none;
-    /* padding: 10px; */
-    /* background-color: white; */
-    margin: 20px 20px 30px 20px;
     box-shadow: 0 0 10px rgba(71, 54, 5, 0.285);
+    transition: all 0.5s ease-out;
     border-radius: 10px;
+    margin: 0 30px 0 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    line-height: normal;
+}
+
+.book_card:hover {
+    transform: scale(1.03);
+}
+
+
+.show {
+    margin-top: 0;
+    margin-bottom: 30px;
+    opacity: 1;
+    max-height: 250px;
+}
+
+.book_list .book_card:first-child {
+    margin-top: 20px;
+}
+
+.book_header {
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd4c9;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+}
+
+.book_footer {
+    justify-content: space-between;
+    display: flex;
+    background-color: #faf4ee;
+    padding: 10px 10px 5px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.book_img {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    width: 26px;
+    height: 26px;
 }
 
 .price {
@@ -23,60 +87,6 @@
     background-color: #dcd0c3;
     border-radius: 5px;
     color: #64483c
-}
-
-.book_card:hover {
-    transform: scale(1.03);
-
-}
-
-.available_books {
-    /* border: 2px solid black; */
-    display: inline-block;
-    order: -1;
-    padding: 10px;
-    width: 65%
-}
-
-.book_list {
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    height: 85vh;
-}
-
-::-webkit-scrollbar {
-    width: 0;
-}
-
-.book_header {
-    padding: 10px 10px 5px 10px;
-    background-color: #ddd4c9;
-    border-radius: 10px 10px 0 0;
-    display: flex;
-}
-
-.book_footer {
-    justify-content: space-between;
-    display: flex;
-    /* rgba(230, 231, 238, 0.3) */
-    background-color: #faf4ee;
-    padding: 10px 10px 5px 10px;
-    border-radius: 0 0 10px 10px;
-}
-
-.list_title {
-    padding: 0;
-    margin: 0;
-    margin-left: 10px;
-    margin-bottom: 15px;
-}
-
-.book_img {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 5px;
-    width: 26px;
-    height: 26px;
 }
 
 @media screen and (max-width: 1250px) {
